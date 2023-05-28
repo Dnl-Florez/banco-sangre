@@ -1,13 +1,12 @@
-import React from 'react';
-import { BancoProvider } from './components/BancoContext/BancoContext.js'
-import { AppUI } from './AppUI.js';
+import { BancoProvider } from './components/Context/Context';
 import './App.css';
+import {FormMenu} from './components/FormMenu/FormMenu';
 
 function App() {
   return (
-    <BancoProvider>
-      <AppUI />
-    </BancoProvider>
+	<BancoProvider>
+		<FormMenu/>
+	</BancoProvider>
   );
 }
 
